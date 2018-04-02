@@ -23,6 +23,8 @@ class naveEspacial(pygame.sprite.Sprite):
 
         self.velocidad = 20
 
+        self.sonidoDisparo = pygame.mixer.Sound("Sonidos/laserSpace.wav")
+
     """Nuevos Cambios (Metodos) """
     def movimientoDerecha(self):
         self.rect.right += self.velocidad
@@ -44,6 +46,7 @@ class naveEspacial(pygame.sprite.Sprite):
     def disparar(self,x,y):
         miProyectil = Proyectil(x,y,"imagenes/disparoa.jpg", True)
         self.listaDisparo.append(miProyectil)
+        self.sonidoDisparo.play()
 
     def dibujar(self, superficie):
         superficie.blit(self.ImagenNave, self.rect)
@@ -151,6 +154,9 @@ def SpaceInvader():
     pygame.display.set_caption("Space Invader")
 
     ImagenFondo = pygame.image.load('imagenes/Fondo.jpg')
+
+    pygame.mixer.music.load('Sonidos/Intro.mp3')
+    pygame.mixer.music.play(3)
 
     jugador = naveEspacial()
     enemigo = Invasor(100,100)
