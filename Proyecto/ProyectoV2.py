@@ -154,8 +154,23 @@ class Invasor(pygame.sprite.Sprite):
         self.listaDisparo.append(miProyectil)
 
 def cargarEnemigos():
-    enemigo = Invasor(100,100,100,'imagenes/MarcianoA.jpg', 'imagenes/MarcianoB.jpg')
-    listaEnemigo.append(enemigo)
+    posx = 100
+    for x in range(1, 5):
+        enemigo = Invasor(posx,100,40,'imagenes/MarcianoA.jpg', 'imagenes/MarcianoB.jpg')
+        listaEnemigo.append(enemigo)
+        posx = posx + 200
+
+    posx = 100
+    for x in range(1, 5):
+        enemigo = Invasor(posx,0,40,'imagenes/Marciano2A.jpg', 'imagenes/Marciano2B.jpg')
+        listaEnemigo.append(enemigo)
+        posx = posx + 200
+
+    posx = 100
+    for x in range(1, 5):
+        enemigo = Invasor(posx,-100,40,'imagenes/Marciano3A.jpg', 'imagenes/Marciano3B.jpg')
+        listaEnemigo.append(enemigo)
+        posx = posx + 200
 
 def SpaceInvader():
     pygame.init()
