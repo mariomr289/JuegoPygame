@@ -70,16 +70,33 @@ class Invasor(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
 
         self.imagenA = pygame.image.load('imagenes/MarcianoA.jpg')
+        self.imagenB = pygame.image.load('imagenes/MarcianoB.jpg')
 
-        self.rect = self.imagenA.get_rect()
+        self.listaImagenes = [self.imagenA, self.imagenB]
+        self.posImagen = 0
+
+        self.imagenInvasor = self.listaImagenes[self.posImagen]
+        self.rect = self.imagenInvasor.get_rect()
 
         self.listaDisparo = []
         self.velocidad = 20
         self.rect.top = posy
         self.rect.left = posx
 
+        self.tiempoCambio = 1
+
     def dibujar(self, superficie):
-        superficie.blit(self.imagenA, self.rect)
+        self.imagenInvasor = self.listaImagenes[self.posImagen]
+        superficie.blit(self.imagenInvasor, self.rect)
+
+    def comportamiento(self, tiempo):
+        #algoritmo de comportamiento
+        if self.tiempoCambio == tiempo:
+            self.posImagen += 1
+            self.tiempoCambio += 1
+
+            if self.posImagen > len(self.listaImagenes)-1:
+                self.posImagen  = 0
 
 def SpaceInvader():
     pygame.init()
@@ -102,7 +119,7 @@ def SpaceInvader():
 
         #jugador.movimiento()
 
-        #DemoProyectil.trayectoria()
+        tiempo = pygame.time.get_ticks()/1000
 
         for evento in pygame.event.get():
             if evento.type == QUIT:
@@ -123,6 +140,8 @@ def SpaceInvader():
                         jugador.disparar(x,y)
 
         venta.blit(ImagenFondo,(0,0))
+
+        enemigo.comportamiento(tiempo)
 
         jugador.dibujar(venta)
         enemigo.dibujar(venta)
