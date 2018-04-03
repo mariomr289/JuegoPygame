@@ -11,6 +11,13 @@ ancho = 900
 alto = 480
 listaEnemigo = []
 
+def detenerTodo():
+    for enemigo in listaEnemigo:
+        for disparo in enemigo.listaDisparo:
+            enemigo.listaDisparo.remove(disparo)
+
+        enemigo.conquista = True
+
 def cargarEnemigos():
     posx = 100
     for x in range(1, 5):
@@ -37,8 +44,11 @@ def SpaceInvader():
 
     ImagenFondo = pygame.image.load('imagenes/Fondo.jpg')
 
-    #pygame.mixer.music.load('Sonidos/Intro.mp3')
-    #pygame.mixer.music.play(3)
+    pygame.mixer.music.load('Sonidos/Intro.mp3')
+    pygame.mixer.music.play(3)
+
+    miFuenteSistema = pygame.font.SysFont("Arial", 30)
+    Texto = miFuenteSistema.render("Fin del Juego",0,(120,100,40))
 
     jugador = Nave.naveEspacial(ancho,alto)
     cargarEnemigos()
@@ -96,14 +106,19 @@ def SpaceInvader():
                 enemigo.dibujar(venta)
 
                 if enemigo.rect.colliderect(jugador.rect):
-                    pass
+                    jugador.destruccion()
+                    enjuego = False
+                    detenerTodo()
 
                 if len(enemigo.listaDisparo) > 0:
                     for x in enemigo.listaDisparo:
                         x.dibujar(venta)
                         x.trayectoria()
+                        
                         if x.rect.colliderect(jugador.rect):
-                            pass
+                            jugador.destruccion()
+                            enJuego = False
+                            detenerTodo()
 
                         if x.rect.top > 900:
                             enemigo.listaDisparo.remove(x)
@@ -112,6 +127,10 @@ def SpaceInvader():
                                 if x.rect.colliderect(disparo.rect):
                                     jugador.listaDisparo.remove(disparo)
                                     enemigo.listaDisparo.remove(x)
+
+        if enJuego == False:
+            pygame.mixer.music.fadeout(3000)
+            venta.blit(Texto,(300,300))
 
         pygame.display.update()
 

@@ -20,8 +20,10 @@ class Invasor(pygame.sprite.Sprite):
         self.rect.top = posy
         self.rect.left = posx
 
-        self.rangoDisparo = 5
+        self.rangoDisparo = 1
         self.tiempoCambio = 1
+
+        self.conquista = False
 
         self.derecha = True
         self.contador = 0
@@ -35,15 +37,16 @@ class Invasor(pygame.sprite.Sprite):
         superficie.blit(self.imagenInvasor, self.rect)
 
     def comportamiento(self, tiempo):
-        self.__movimientos()
+        if self.conquista == False:
+            self.__movimientos()
 
-        self.__ataque()
-        if self.tiempoCambio == tiempo:
-            self.posImagen += 1
-            self.tiempoCambio += 1
+            self.__ataque()
+            if self.tiempoCambio == tiempo:
+                self.posImagen += 1
+                self.tiempoCambio += 1
 
-            if self.posImagen > len(self.listaImagenes)-1:
-                self.posImagen  = 0
+                if self.posImagen > len(self.listaImagenes)-1:
+                    self.posImagen  = 0
 
     def __movimientos(self):
         if self.contador < 3:
