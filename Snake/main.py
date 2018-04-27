@@ -23,7 +23,7 @@ while True:
         pass
     elif fase == 2:
         g.Fondo()
-        print "Has entrado a Creditos"
+        g.Creditos()
         pass
     #Cuerpo de eventos
     for evento in pygame.event.get():
@@ -48,6 +48,9 @@ while True:
                         fase = 1
                     elif seleccionmenu == 1:
                         fase =2
+            elif fase == 2:
+                if evento.key == pygame.K_x:
+                    fase = 0
         elif evento.type == KEYUP:
             pass
 

@@ -16,7 +16,11 @@ Fuente_Texto = pygame.font.Font("Font/PressStart2P-Regular.ttf",15)
 Titulo = Fuente_Titulo.render("Classic Snake", True, VerdeObjeto)
 UnJugador = Fuente_Menu.render("Un Jugador", True, VerdeObjeto)
 Creditos = Fuente_Menu.render("Creditos", True, VerdeObjeto)
-InstruccionMenu = Fuente_Texto.render("Presione Z para entrar a la opcion",True, VerdeObjeto)
+InstruccionMenu = Fuente_Texto.render("Presione Z para entrar a la opcion",True, VerdeObjetoClaro)
+InstruccionMenu2 = Fuente_Texto.render("Presione X para volver al menu",True, VerdeObjetoClaro)
+Creditos1 = Fuente_Texto.render("Este juego fue desarrollado por",True,VerdeObjetoClaro)
+Creditos2 = Fuente_Texto.render("Mario Merlo, sin fines de lucro",True,VerdeObjetoClaro)
+Creditos3 = Fuente_Texto.render("Crear. Solor para disfrutar...",True,VerdeObjetoClaro)
 
 class grafica(object):
     def __init__(self):
@@ -35,3 +39,9 @@ class grafica(object):
         ventana.blit(Creditos,(120,230))
         ventana.blit(InstruccionMenu,(10,550))
         pass
+    def Creditos(self):
+        ventana.blit(Creditos, (120,230))
+        ventana.blit(Creditos1, (120,260))
+        ventana.blit(Creditos2, (120,280))
+        ventana.blit(Creditos3, (120,300))
+        ventana.blit(InstruccionMenu2,(10,550))
