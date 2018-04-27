@@ -49,6 +49,17 @@ class grafica(object):
         ventana.blit(Creditos3, (120,300))
         ventana.blit(InstruccionMenu2,(10,550))
 
-    def DibujarSnake(self):
+    def DibujarSnake(self, orientacion):
         for i in secciones:
             pygame.draw.rect(ventana,VerdeObjeto, (i[0]+1,i[1]+1,18,18))
+            if secciones.index(i) == len(secciones)-1:
+                if orientacion == 0:
+                    secciones.append((i[0]+20,i[1]))
+                elif orientacion == 90:
+                    secciones.append((i[0],i[1]-20))
+                elif orientacion == 180:
+                    secciones.append((i[0]-20,i[1]))
+                elif orientacion == 270:
+                    secciones.append((i[0],i[1]+20))
+                del secciones[0]
+                break

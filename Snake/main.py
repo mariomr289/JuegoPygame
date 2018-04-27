@@ -12,6 +12,7 @@ g = grafitero.grafica()
 # Variables
 fase = 0
 seleccionmenu = 0
+orientacion = 0
 
 # Ciclo del juego
 while True:
@@ -20,7 +21,7 @@ while True:
         g.Titulo(seleccionmenu)
     elif fase == 1:
         g.Fondo()
-        g.DibujarSnake()
+        g.DibujarSnake(orientacion)
         pass
     elif fase == 2:
         g.Fondo()
@@ -49,6 +50,15 @@ while True:
                         fase = 1
                     elif seleccionmenu == 1:
                         fase =2
+            elif fase == 1:
+                if evento.key == pygame.K_DOWN:
+                    orientacion = 270
+                if evento.key == pygame.K_UP:
+                    orientacion = 90
+                if evento.key == pygame.K_LEFT:
+                    orientacion = 180
+                if evento.key == pygame.K_RIGHT:
+                    orientacion = 0
             elif fase == 2:
                 if evento.key == pygame.K_x:
                     fase = 0
@@ -56,7 +66,7 @@ while True:
             pass
 
     pygame.display.update()
-    time.sleep(0.03)
+    time.sleep(0.1)
     pass
 
 print "Todo Funcionando"
