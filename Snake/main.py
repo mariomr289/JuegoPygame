@@ -2,6 +2,7 @@ import pygame
 from pygame.locals import *
 import sys
 import grafitero
+import time
 
 pygame.init()
 ventana = pygame.display.set_mode((800,600))
@@ -18,8 +19,8 @@ while True:
         g.Fondo()
         g.Titulo(seleccionmenu)
     elif fase == 1:
-        print "Has entrado a 1 jugador"
         g.Fondo()
+        g.DibujarSnake()
         pass
     elif fase == 2:
         g.Fondo()
@@ -55,6 +56,7 @@ while True:
             pass
 
     pygame.display.update()
+    time.sleep(0.03)
     pass
 
 print "Todo Funcionando"

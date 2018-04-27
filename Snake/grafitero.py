@@ -22,6 +22,9 @@ Creditos1 = Fuente_Texto.render("Este juego fue desarrollado por",True,VerdeObje
 Creditos2 = Fuente_Texto.render("Mario Merlo, sin fines de lucro",True,VerdeObjetoClaro)
 Creditos3 = Fuente_Texto.render("Crear. Solor para disfrutar...",True,VerdeObjetoClaro)
 
+#Snake
+secciones = [(80,80),(80,100)]
+
 class grafica(object):
     def __init__(self):
         print "Nuevas graficas creadas"
@@ -45,3 +48,7 @@ class grafica(object):
         ventana.blit(Creditos2, (120,280))
         ventana.blit(Creditos3, (120,300))
         ventana.blit(InstruccionMenu2,(10,550))
+
+    def DibujarSnake(self):
+        for i in secciones:
+            pygame.draw.rect(ventana,VerdeObjeto, (i[0]+1,i[1]+1,18,18))
