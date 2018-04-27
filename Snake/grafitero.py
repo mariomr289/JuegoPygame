@@ -23,7 +23,8 @@ Creditos2 = Fuente_Texto.render("Mario Merlo, sin fines de lucro",True,VerdeObje
 Creditos3 = Fuente_Texto.render("Crear. Solor para disfrutar...",True,VerdeObjetoClaro)
 
 #Snake
-secciones = [(80,80),(80,100)]
+secciones = [(80,80),(80,100),(80,120),(80,140),(80,160),(100,160)]
+Pcomida = (200,200)
 
 class grafica(object):
     def __init__(self):
@@ -63,3 +64,6 @@ class grafica(object):
                     secciones.append((i[0],i[1]+20))
                 del secciones[0]
                 break
+
+    def Comida(self):
+        pygame.draw.rect(ventana,VerdeObjetoClaro,(Pcomida[0],Pcomida[1],18,18))

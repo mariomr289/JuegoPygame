@@ -22,6 +22,7 @@ while True:
     elif fase == 1:
         g.Fondo()
         g.DibujarSnake(orientacion)
+        g.Comida()
         pass
     elif fase == 2:
         g.Fondo()
@@ -51,13 +52,13 @@ while True:
                     elif seleccionmenu == 1:
                         fase =2
             elif fase == 1:
-                if evento.key == pygame.K_DOWN:
+                if evento.key == pygame.K_DOWN and orientacion != 90:
                     orientacion = 270
-                if evento.key == pygame.K_UP:
+                if evento.key == pygame.K_UP and orientacion != 270:
                     orientacion = 90
-                if evento.key == pygame.K_LEFT:
+                if evento.key == pygame.K_LEFT and orientacion != 0:
                     orientacion = 180
-                if evento.key == pygame.K_RIGHT:
+                if evento.key == pygame.K_RIGHT and orientacion != 180:
                     orientacion = 0
             elif fase == 2:
                 if evento.key == pygame.K_x:
