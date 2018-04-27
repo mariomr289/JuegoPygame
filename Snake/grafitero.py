@@ -62,7 +62,8 @@ class grafica(object):
                     secciones.append((i[0]-20,i[1]))
                 elif orientacion == 270:
                     secciones.append((i[0],i[1]+20))
-                del secciones[0]
+                if i != Pcomida:
+                    del secciones[0]
                 break
 
     def Comida(self):
