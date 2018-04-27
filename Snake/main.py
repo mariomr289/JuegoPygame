@@ -14,8 +14,17 @@ seleccionmenu = 0
 
 # Ciclo del juego
 while True:
-    g.Fondo()
-    g.Titulo(seleccionmenu)
+    if fase == 0:
+        g.Fondo()
+        g.Titulo(seleccionmenu)
+    elif fase == 1:
+        print "Has entrado a 1 jugador"
+        g.Fondo()
+        pass
+    elif fase == 2:
+        g.Fondo()
+        print "Has entrado a Creditos"
+        pass
     #Cuerpo de eventos
     for evento in pygame.event.get():
         if evento.type == QUIT:
@@ -34,6 +43,11 @@ while True:
                         seleccionmenu -= 1
                     else:
                         seleccionmenu = 1
+                elif evento.key == pygame.K_z:
+                    if seleccionmenu == 0:
+                        fase = 1
+                    elif seleccionmenu == 1:
+                        fase =2
         elif evento.type == KEYUP:
             pass
 
