@@ -1,5 +1,6 @@
 import pygame
 from pygame.locals import *
+import random
 pygame.init()
 
 ventana = pygame.display.set_mode((800,600))
@@ -24,7 +25,6 @@ Creditos3 = Fuente_Texto.render("Crear. Solor para disfrutar...",True,VerdeObjet
 
 #Snake
 secciones = [(80,80),(80,100),(80,120),(80,140),(80,160),(100,160)]
-Pcomida = (200,200)
 
 class grafica(object):
     def __init__(self):
@@ -50,7 +50,7 @@ class grafica(object):
         ventana.blit(Creditos3, (120,300))
         ventana.blit(InstruccionMenu2,(10,550))
 
-    def DibujarSnake(self, orientacion):
+    def DibujarSnake(self, orientacion,Pcomida):
         for i in secciones:
             pygame.draw.rect(ventana,VerdeObjeto, (i[0]+1,i[1]+1,18,18))
             if secciones.index(i) == len(secciones)-1:
@@ -64,7 +64,10 @@ class grafica(object):
                     secciones.append((i[0],i[1]+20))
                 if i != Pcomida:
                     del secciones[0]
+                    return Pcomida
+                else:
+                    return (random.randint(0,39)*20, random.randint(0,29)*20)
                 break
 
-    def Comida(self):
+    def Comida(self,Pcomida):
         pygame.draw.rect(ventana,VerdeObjetoClaro,(Pcomida[0],Pcomida[1],18,18))

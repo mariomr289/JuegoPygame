@@ -13,7 +13,7 @@ g = grafitero.grafica()
 fase = 0
 seleccionmenu = 0
 orientacion = 0
-
+Pcomida = (200,200)
 # Ciclo del juego
 while True:
     if fase == 0:
@@ -21,8 +21,8 @@ while True:
         g.Titulo(seleccionmenu)
     elif fase == 1:
         g.Fondo()
-        g.DibujarSnake(orientacion)
-        g.Comida()
+        Pcomida = g.DibujarSnake(orientacion,Pcomida)
+        g.Comida(Pcomida)
         pass
     elif fase == 2:
         g.Fondo()
