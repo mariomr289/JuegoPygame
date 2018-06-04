@@ -1,0 +1,17 @@
+Game Programming with Python and PyGame – Making Breakout
+http://codentronix.com/2011/04/14/game-programming-with-python-and-pygame-making-breakout/
+
+Detección de Movimiento con OpenCV
+https://programarfacil.com/blog/vision-artificial/deteccion-de-movimiento-con-opencv-python/
+
+Juego Helicoptero
+https://www.youtube.com/watch?v=UxcCoDlnqr4
+
+SpaceShooter - Game development using Python Pygame
+https://www.youtube.com/watch?v=o99zpLsM-ZI
+
+Python with Pygame 2D game
+https://www.youtube.com/watch?v=qeH_a2uWX2Y
+
+2D Platformer with Pygame - Part 1
+https://www.youtube.com/watch?v=bxibfL4TjWo
