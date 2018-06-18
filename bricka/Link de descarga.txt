@@ -1,0 +1,6 @@
+Video:
+https://www.youtube.com/watch?v=x8RfvDgshws
+
+Codigo:
+http://codentronix.com/2011/04/14/game-programming-with-python-and-pygame-making-breakout/
+

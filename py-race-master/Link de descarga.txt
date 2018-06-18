@@ -1,0 +1,6 @@
+Video:
+https://www.youtube.com/watch?v=qeH_a2uWX2Y
+
+Codigo:
+https://github.com/codingchili/py-race
+
