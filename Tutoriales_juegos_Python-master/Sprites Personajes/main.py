@@ -7,9 +7,9 @@ pygame.init()
 
 # Definimos algunas variables que usaremos en nuestro código
 
-ancho_ventana = 954
-alto_ventana = 710
-screen = pygame.display.set_mode((ancho_ventana, alto_ventana), pygame.FULLSCREEN|pygame.HWSURFACE|pygame.DOUBLEBUF)
+ancho_ventana = 640
+alto_ventana = 480
+screen = pygame.display.set_mode((ancho_ventana, alto_ventana))
 pygame.display.set_caption("Tutorial sprites Piensa 3D")
 clock = pygame.time.Clock()
 player = player.Kate((ancho_ventana/2, alto_ventana/2))
