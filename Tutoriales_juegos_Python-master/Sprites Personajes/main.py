@@ -15,7 +15,7 @@ clock = pygame.time.Clock()
 player = player.Kate((ancho_ventana/2, alto_ventana/2))
 game_over = False
 
-while game_over == False:
+while not game_over:
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -28,4 +28,4 @@ while game_over == False:
     pygame.display.flip()
     clock.tick(20)
 
-pygame.quit ()
+pygame.quit()
