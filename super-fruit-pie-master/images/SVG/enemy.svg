@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   id="svg3486"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="enemy.svg"
+   inkscape:export-filename="/home/david/dev/super-fruit-pie/images/enemy.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3488">
+    <linearGradient
+       id="linearGradient3801">
+      <stop
+         style="stop-color:#00a542;stop-opacity:1;"
+         offset="0"
+         id="stop3803" />
+      <stop
+         style="stop-color:#95ff81;stop-opacity:1;"
+         offset="1"
+         id="stop3805" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4010"
+       id="radialGradient4676"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.0573615,0,13.66392)"
+       cx="50.969902"
+       cy="-242.74527"
+       fx="50.969902"
+       fy="-242.74527"
+       r="11.324218" />
+    <linearGradient
+       id="linearGradient4010">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4012" />
+      <stop
+         style="stop-color:#001e28;stop-opacity:1;"
+         offset="1"
+         id="stop4014" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6738">
+      <stop
+         style="stop-color:#5a878e;stop-opacity:1;"
+         offset="0"
+         id="stop6740" />
+      <stop
+         id="stop4136"
+         offset="0.5"
+         style="stop-color:#62a0c4;stop-opacity:1;" />
+      <stop
+         style="stop-color:#33545e;stop-opacity:1;"
+         offset="1"
+         id="stop6742" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6738"
+       id="radialGradient3082"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.92552333,0,0,0.94078088,29.845447,0.89635259)"
+       cx="-15.966605"
+       cy="15.970533"
+       fx="-15.966605"
+       fy="15.970533"
+       r="14.517926" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="26.366667"
+     inkscape:cx="15"
+     inkscape:cy="15"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="956"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="29"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3494"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3491">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,-2)">
+    <rect
+       style="fill:#33545e;fill-opacity:1;stroke:#000000;stroke-width:0.75048715;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="rect4069"
+       width="7.5947795"
+       height="4.5645957"
+       x="-31.619637"
+       y="7.4732838"
+       ry="2.2822978"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <rect
+       ry="2.2822978"
+       y="17.953054"
+       x="-31.619637"
+       height="4.5645957"
+       width="7.5947795"
+       id="rect4206"
+       style="fill:#33545e;fill-opacity:1;stroke:#000000;stroke-width:0.75048715;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       transform="matrix(0,-1,1,0,0,0)" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path4123"
+       d="M 8.9115089,2.6853071 C 6.0504511,2.9330943 3.4802902,4.6142865 2.7922117,8.1740321 1.8180204,13.501555 1.9892575,18.516688 2.0940655,23.549938 c 0.4466603,3.297802 3.189684,4.966144 5.5270046,5.558982 l 14.7774649,0 C 25.44817,28.577621 27.363051,26.678239 28.041899,23.4908 28.050884,18.362084 27.864865,13.261225 27.169214,8.2331704 26.676862,5.1466308 24.799801,3.1635088 21.293135,2.6741899 z"
+       style="fill:url(#radialGradient3082);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-ydpi="359.78394" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#161616;stroke-width:0.87994421;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="rect6734"
+       width="5.3548388"
+       height="5.5166979"
+       x="7.2864356"
+       y="10.168713"
+       ry="2.5669084"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-ydpi="359.78394" />
+    <rect
+       ry="2.5669084"
+       y="10.168713"
+       x="17.497606"
+       height="5.5166979"
+       width="5.3548388"
+       id="rect6736"
+       style="fill:#000000;fill-opacity:1;stroke:#161616;stroke-width:0.87994421;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-ydpi="359.78394" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="path4370"
+       d="m 9.1520492,6.3012985 c 0.4828822,0.00637 0.9660928,0.02863 1.4465508,0.075164 0.34809,0.037258 0.699561,0.087763 1.02821,0.2051806 0.268278,0.1211867 0.514583,0.2815207 0.765146,0.4317787 0.292737,0.1718406 0.592444,0.331884 0.8941,0.4891587 0.198247,0.100388 0.402767,0.1971892 0.587618,0.3187371 0.123792,0.1049368 0.263152,0.1888832 0.395271,0.2826381 0.01946,0.011202 0.03892,0.022441 0.05838,0.033651 0,0 -1.152727,0.6963017 -1.152727,0.6963017 l 0,0 c -0.02073,-0.01326 -0.04145,-0.026509 -0.06218,-0.039769 C 12.977959,8.7056336 12.852562,8.6076001 12.722016,8.5140502 12.536707,8.4010511 12.343884,8.2980742 12.15015,8.1985685 11.847867,8.0383754 11.54894,7.8728429 11.252604,7.7030873 11.008433,7.5582831 10.767282,7.4028812 10.50034,7.2973503 10.179112,7.1969746 9.8433739,7.1406495 9.5071924,7.1071871 9.0216875,7.0651793 8.5335511,7.0389538 8.0459175,7.0572233 c 0,0 1.1061317,-0.7559295 1.1061317,-0.7559295 z"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-ydpi="359.78394" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 21.074053,6.2476268 c -0.482882,0.00543 -0.966093,0.024481 -1.44655,0.064249 -0.348091,0.031848 -0.699562,0.075035 -1.028211,0.1753967 -0.268278,0.1035935 -0.514583,0.2406562 -0.765146,0.3691029 -0.292737,0.1468976 -0.592444,0.2837095 -0.8941,0.4181557 -0.198247,0.085819 -0.402767,0.1685651 -0.587618,0.2724708 -0.123792,0.089697 -0.263152,0.1614648 -0.395271,0.2416109 -0.01946,0.00955 -0.03892,0.019177 -0.05838,0.028771 0,0 1.152727,0.5952296 1.152727,0.5952296 l 0,0 c 0.02073,-0.011315 0.04145,-0.022666 0.06218,-0.033992 0.134462,-0.075659 0.259859,-0.1594624 0.390405,-0.239434 0.185309,-0.096592 0.378132,-0.1846256 0.571866,-0.2696868 0.302283,-0.1369414 0.60121,-0.2784455 0.897546,-0.4235599 0.244171,-0.1237855 0.485322,-0.2566294 0.752264,-0.3468413 0.321228,-0.085807 0.656966,-0.1339546 0.993148,-0.162561 0.485505,-0.035902 0.973641,-0.058321 1.461275,-0.042704 0,0 -1.106132,-0.6462011 -1.106132,-0.6462011 z"
+       id="path4394"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-ydpi="359.78394" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4291"
+       d="m 7.7799755,28.134721 0.1077209,1.545882 3.7114096,0.06428 0.02669,-1.270583 z"
+       style="opacity:0.77220076;fill:#33545e;fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="opacity:0.77220076;fill:#33545e;fill-opacity:1;stroke:none"
+       d="m 22.177996,28.174529 -0.107721,1.545883 -3.71141,0.06428 -0.02669,-1.270583 z"
+       id="path4293"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.54301894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 4.4490753,18.048788 2.8366881,1.380925 2.300604,-1.478759 z"
+       id="path3861"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3863"
+       d="m 9.8768117,17.941872 2.5732273,1.432392 2.573224,-1.432392 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.54301894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3865"
+       d="m 15.3345,17.941872 2.573224,1.432392 2.573227,-1.432392 z"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.54301894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.54301894;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 20.748817,17.960431 2.004539,1.52191 3.103314,-1.321386 z"
+       id="path3867"
+       inkscape:connector-curvature="0" />
+    <rect
+       inkscape:export-ydpi="359.78394"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       ry="0.98027295"
+       y="11.873679"
+       x="10.097199"
+       height="2.1067638"
+       width="2.0449517"
+       id="rect3877"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+    <rect
+       inkscape:export-ydpi="359.78394"
+       inkscape:export-xdpi="359.78394"
+       inkscape:export-filename="/home/david/data/www/game_2D_dev/images/path4022.png"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       id="rect3879"
+       width="2.0449517"
+       height="2.1067638"
+       x="17.996729"
+       y="11.873679"
+       ry="0.98027295" />
+  </g>
+</svg>
