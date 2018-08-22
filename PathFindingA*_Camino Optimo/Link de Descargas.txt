@@ -1,0 +1,9 @@
+http://razonartificial.com/2010/03/a-pathfinding-camino-optimo/
+
+http://razonartificial.com/2010/03/pathfinding-a-en-python-parte-i/
+
+http://razonartificial.com/2010/04/pathfinding-a-en-python-parte-ii/
+
+http://razonartificial.com/2010/04/pathfinding-a-en-python-parte-iii/
+
+
